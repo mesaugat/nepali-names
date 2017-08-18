@@ -5,9 +5,9 @@ import React from 'react';
  */
 const Header = () =>
   <nav>
-    <div className="nav-wrapper teal">
+    <div className="nav-wrapper teal darken-3">
       <div className="container">
-        <a href="/" className="brand-logo">
+        <a href="/nepali-names" className="brand-logo">
           Nepali Names
         </a>
       </div>
