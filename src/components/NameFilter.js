@@ -20,6 +20,7 @@ const NameFilter = props => {
       <div className="input-field fixed col offset-s1 offset-m1 offset-l1 m2 s5 l2">
         <input
           type="checkbox"
+          className="filled-in"
           id="male"
           name="male"
           checked={props.input.male}
@@ -30,6 +31,7 @@ const NameFilter = props => {
       <div className="input-field fixed col offset-s1 offset-l1 m3 s5 l2">
         <input
           type="checkbox"
+          className="filled-in"
           id="female"
           name="female"
           checked={props.input.female}
