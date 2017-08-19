@@ -9,7 +9,7 @@ import femaleIcon from '../assets/female.png';
  */
 class NameList extends Component {
   rowRenderer = ({ key, index, style }) => {
-    let { names } = this.props;
+    const { names } = this.props;
 
     return (
       <div key={key} style={style}>
@@ -36,7 +36,12 @@ class NameList extends Component {
       <li className="collection-item center">
         {this.props.isLoading
           ? <div>
-              <i className="fa fa-refresh fa-fw" /> Loading...
+              <i
+                className="fa fa-refresh fa-fw"
+                title="Refresh"
+                aria-hidden="true"
+              />{' '}
+              Loading...
             </div>
           : <div>
               <i
