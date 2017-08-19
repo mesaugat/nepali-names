@@ -98,10 +98,7 @@ class App extends Component {
         <div className="container">
           <main>
             <NameFilter
-              names={this.state.names}
               input={this.state.input}
-              filterNames={this.filterNames}
-              filterHandler={this.filteredNames}
               searchHandler={this.searchHandler}
               checkboxHandler={this.checkboxHandler}
             />
