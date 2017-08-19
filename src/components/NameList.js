@@ -56,20 +56,29 @@ class NameList extends Component {
   };
 
   render() {
+    const { names, total } = this.props;
+
     return (
-      <ul className="collection">
-        <AutoSizer disableHeight>
-          {({ width }) =>
-            <List
-              width={width}
-              height={480}
-              rowCount={this.props.names.length}
-              rowHeight={70}
-              noRowsRenderer={this.noRowsRenderer}
-              rowRenderer={this.rowRenderer}
-            />}
-        </AutoSizer>
-      </ul>
+      <div>
+        {this.props.isLoading
+          ? ''
+          : <p className="small grey-text text-darken-1 right-align">
+              Showing {names.length} of {total} names
+            </p>}
+        <ul className="collection">
+          <AutoSizer disableHeight>
+            {({ width }) =>
+              <List
+                width={width}
+                height={480}
+                rowCount={names.length}
+                rowHeight={70}
+                noRowsRenderer={this.noRowsRenderer}
+                rowRenderer={this.rowRenderer}
+              />}
+          </AutoSizer>
+        </ul>
+      </div>
     );
   }
 }

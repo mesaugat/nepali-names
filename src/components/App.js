@@ -104,6 +104,7 @@ class App extends Component {
             />
             <NameList
               names={this.state.filteredNames}
+              total={this.state.names.length}
               isLoading={this.state.isLoading}
             />
           </main>
