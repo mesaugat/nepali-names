@@ -11,6 +11,10 @@ main {
   flex: 1 0 auto;
 }
 
+nav .brand-logo {
+  font-size: 1.9rem;
+}
+
 .collection {
   margin-top: 0;
 }
@@ -20,8 +24,8 @@ main {
   color: #757575;
 }
 
-nav .brand-logo {
-  font-size: 1.9rem;
+div.filter {
+  margin-bottom: 5px;
 }
 
 p.small {

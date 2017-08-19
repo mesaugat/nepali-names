@@ -70,7 +70,7 @@ class NameList extends Component {
             {({ width }) =>
               <List
                 width={width}
-                height={480}
+                height={570}
                 rowCount={names.length}
                 rowHeight={70}
                 noRowsRenderer={this.noRowsRenderer}

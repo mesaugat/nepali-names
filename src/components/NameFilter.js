@@ -5,7 +5,7 @@ import React from 'react';
  */
 const NameFilter = props => {
   return (
-    <div className="row">
+    <div className="row filter">
       <div className="input-field col offset-s1 offset-m1 offset-l1 m5 s10 l5">
         <i className="fa fa-search prefix" aria-hidden="true" />
         <input
