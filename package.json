@@ -2,6 +2,7 @@
   "name": "nepali-names",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://mesaugat.github.io/nepali-names",
   "dependencies": {
     "firebase": "^4.2.0",
     "gh-pages": "^1.0.0",
@@ -27,7 +28,6 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "react-scripts test --env=jsdom",
-    "prettify": "prettier --single-quote --write \"src/**/*.{js, json, css}\""
-  },
-  "homepage": "https://mesaugat.github.io/nepali-names"
+    "prettify": "prettier --single-quote --write \"src/**/*.{js,json,css}\""
+  }
 }

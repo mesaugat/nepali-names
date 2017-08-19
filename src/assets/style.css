@@ -1,15 +1,15 @@
 /**
  * Custom Styles
  */
- body {
-   display: flex;
-   min-height: 100vh;
-   flex-direction: column;
- }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
- main {
-   flex: 1 0 auto;
- }
+main {
+  flex: 1 0 auto;
+}
 
 .collection .secondary-title {
   font-size: 14px;
@@ -23,6 +23,7 @@ nav .brand-logo {
 /**
  * https://github.com/Dogfalo/materialize/pull/5061
  */
-.fixed [type="checkbox"] + label, .fixed [type="radio"] + label {
+.fixed [type="checkbox"] + label,
+.fixed [type="radio"] + label {
   pointer-events: auto;
 }
