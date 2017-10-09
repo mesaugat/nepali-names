@@ -4,6 +4,18 @@ Searchable collection of Nepali :nepal: names.
 
 Made possible with JavaScript.
 
+## Getting Started
+
+* Make sure you have npm or yarn installed on your computer *
+
+1. Clone the repository
+
+2. `cd` into your newly cloned repository
+
+3. Run `npm install` or `yarn install`
+
+4. Now you are ready to start building away! :beers:
+
 ## Data Source
 
 Data has been taken from [techgaun/nepali-names](https://github.com/techgaun/nepali-names).
