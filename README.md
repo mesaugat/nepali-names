@@ -14,7 +14,9 @@ Made possible with JavaScript.
 
 3. Run `npm install` or `yarn install`
 
-4. Now you are ready to start building away! :beers:
+4. Run `npm run build` and locate to `http://192.168.8.103:3000/`
+
+5. Now you are ready to start building away! :beers:
 
 ## Data Source
 
