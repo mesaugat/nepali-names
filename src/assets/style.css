@@ -38,7 +38,18 @@ p.small {
 /**
  * https://github.com/Dogfalo/materialize/pull/5061
  */
-.fixed [type="checkbox"] + label,
-.fixed [type="radio"] + label {
+.fixed [type='checkbox'] + label,
+.fixed [type='radio'] + label {
   pointer-events: auto;
+}
+
+/* custom id to not conflict with imported styles */
+#footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer-copyright {
+  padding-bottom: 27px !important;
 }
