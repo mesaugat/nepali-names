@@ -25,7 +25,8 @@ nav .brand-logo {
 }
 
 div.filter {
-  margin-bottom: 5px;
+  margin: 0px;
+  margin-top: 10px;
 }
 
 p.small {
@@ -41,4 +42,25 @@ p.small {
 .fixed [type="checkbox"] + label,
 .fixed [type="radio"] + label {
   pointer-events: auto;
+}
+
+.mainContent {
+  margin-bottom: 150px;
+  height: 100vh;
+}
+
+.listItem {
+  outline-bottom: 1px solid grey;
+}
+
+.listItem:hover {
+  cursor: pointer;
+}
+
+.collection-item:hover {
+  background-color: #ccc;
+}
+
+.filter-container {
+  height: 70px;
 }

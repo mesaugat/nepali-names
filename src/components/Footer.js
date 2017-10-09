@@ -4,7 +4,7 @@ import React from 'react';
  * Footer Component.
  */
 const Footer = () =>
-  <footer className="page-footer teal darken-3">
+  <footer className="page-footer teal darken-3 fixed">
     <div className="footer-copyright">
       <div className="container">
         <i className="fa fa-2fa-copyright" aria-hidden="true" />

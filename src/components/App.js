@@ -93,10 +93,10 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div id="wrapper">
         <Header />
         <div className="container">
-          <main>
+          <main className="mainContent">
             <NameFilter
               input={this.state.input}
               searchHandler={this.searchHandler}

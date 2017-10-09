@@ -12,7 +12,7 @@ class NameList extends Component {
     const { names } = this.props;
 
     return (
-      <div key={key} style={style}>
+      <div key={key} style={style} className="listItem">
         <li className="collection-item avatar">
           <img
             src={names[index].gender === 'male' ? maleIcon : femaleIcon}
