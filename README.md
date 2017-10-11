@@ -11,25 +11,17 @@ Made possible with JavaScript.
 
 ## Contributing
 
-1. Fork and clone the repository
+* Fork and clone the repository `git clone git@github.com:<your-username>/nepali-names.git`
 
-```
-git clone git@github.com:<your-username>/nepali-names.git
-```
+* Navigate into your newly cloned repository `cd nepali-names`
 
-2. `cd` into your newly cloned repository
+* Run `yarn` to install the dependencies
 
-```
-cd nepali-names
-```
+* Start the application using `yarn start`
 
-3. Run `npm install` or `yarn` to install the dependencies
+* That's it, you are now ready to start building! :beers:
 
-4. Start the application using `yarn start` or `npm run start`
-
-5. That's it, now you are ready to start building! :beers:
-
-## Note (Important)
+## Important Note
 
 You'll have to export a `REACT_APP_FIREBASE_API_KEY` environment variable to fetch the name list from Firebase.
 
