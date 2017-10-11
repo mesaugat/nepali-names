@@ -4,19 +4,34 @@ Searchable collection of Nepali :nepal: names.
 
 Made possible with JavaScript.
 
-## Getting Started
+## Requirements
 
-* Make sure you have npm or yarn installed on your computer *
+* [Node.js](https://nodejs.org/en/)
+* [NPM](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/en/)
 
-1. Clone the repository
+## Contributing
+
+1. Fork and clone the repository
+
+```
+git clone git@github.com:<your-username>/nepali-names.git
+```
 
 2. `cd` into your newly cloned repository
 
-3. Run `npm install` or `yarn install`
+```
+cd nepali-names
+```
 
-4. Run `npm run build` and locate to `http://192.168.8.103:3000/`
+3. Run `npm install` or `yarn` to install the dependencies
 
-5. Now you are ready to start building away! :beers:
+4. Start the application using `yarn start` or `npm run start`
+
+5. That's it, now you are ready to start building! :beers:
+
+## Note (Important)
+
+You'll have to export a `REACT_APP_FIREBASE_API_KEY` environment variable to fetch the name list from Firebase.
 
 ## Data Source
 
