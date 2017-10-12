@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 /**
  * Custom Styles
  */
@@ -5,6 +7,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: 'Open Sans';
 }
 
 main {
@@ -38,7 +41,29 @@ p.small {
 /**
  * https://github.com/Dogfalo/materialize/pull/5061
  */
-.fixed [type="checkbox"] + label,
-.fixed [type="radio"] + label {
+.fixed [type='checkbox'] + label,
+.fixed [type='radio'] + label {
   pointer-events: auto;
+}
+
+/* custom id to not conflict with imported styles */
+.brand-logo:hover {
+  transition: all 250ms ease;
+  opacity: 0.6;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.collection-item:hover {
+  background-color: #eee;
+}
+
+.loading {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Header from './Header';
-import Footer from './Footer';
 import NameList from './NameList';
 import NameFilter from './NameFilter';
 
@@ -109,7 +108,6 @@ class App extends Component {
             />
           </main>
         </div>
-        <Footer />
       </div>
     );
   }
