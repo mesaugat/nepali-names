@@ -19,7 +19,9 @@ class NameList extends Component {
             alt="avatar"
             className="circle"
           />
-          <span className="title">{names[index].name}</span>
+          <span className="title">
+            {names[index].name}
+          </span>
           <p className="secondary-title">
             {names[index].gender.charAt(0).toUpperCase() +
               names[index].gender.slice(1)}
@@ -32,25 +34,23 @@ class NameList extends Component {
   noRowsRenderer = () => {
     return (
       <li className="collection-item center">
-        {this.props.isLoading ? (
-          <div className="loading">
-            <i
-              className="fa fa-refresh fa-fw"
-              title="Refresh"
-              aria-hidden="true"
-            />{' '}
-            Loading...
-          </div>
-        ) : (
-          <div>
-            <i
-              className="fa fa-exclamation-circle fa-fw"
-              title="Warning"
-              aria-hidden="true"
-            />{' '}
-            Nothing to show.
-          </div>
-        )}
+        {this.props.isLoading
+          ? <div className="loading">
+              <i
+                className="fa fa-refresh fa-fw"
+                title="Refresh"
+                aria-hidden="true"
+              />{' '}
+              Loading...
+            </div>
+          : <div>
+              <i
+                className="fa fa-exclamation-circle fa-fw"
+                title="Warning"
+                aria-hidden="true"
+              />{' '}
+              Nothing to show.
+            </div>}
       </li>
     );
   };
@@ -60,25 +60,22 @@ class NameList extends Component {
 
     return (
       <div>
-        {this.props.isLoading ? (
-          ''
-        ) : (
-          <p className="small grey-text text-darken-1 right-align">
-            Showing {names.length} of {total} names
-          </p>
-        )}
+        {this.props.isLoading
+          ? ''
+          : <p className="small grey-text text-darken-1 right-align">
+              Showing {names.length} of {total} names
+            </p>}
         <ul className="collection">
           <AutoSizer disableHeight>
-            {({ width }) => (
+            {({ width }) =>
               <List
                 width={width}
-                height={570}
+                height={window.innerHeight - 220}
                 rowCount={names.length}
                 rowHeight={70}
                 noRowsRenderer={this.noRowsRenderer}
                 rowRenderer={this.rowRenderer}
-              />
-            )}
+              />}
           </AutoSizer>
         </ul>
       </div>
