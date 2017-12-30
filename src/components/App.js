@@ -40,7 +40,7 @@ class App extends Component {
     this.setState({ input }, this.filterNames);
   };
 
-  filterNames() {
+  filterNames = () => {
     const { names, input } = this.state;
     let males = [],
       females = [];
@@ -63,7 +63,7 @@ class App extends Component {
     const result = [...males, ...females].sort((a, b) => a.id - b.id);
 
     this.setState({ filteredNames: result });
-  }
+  };
 
   componentDidMount() {
     let names = [];

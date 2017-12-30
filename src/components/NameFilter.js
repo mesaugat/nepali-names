@@ -1,9 +1,11 @@
 import React from 'react';
 
 /**
- * NameFilter Component.
+ * Component to filter name list.
  */
 const NameFilter = props => {
+  const { input, searchHandler, checkboxHandler } = props;
+
   return (
     <div className="row filter">
       <div className="input-field col offset-s1 offset-m1 offset-l1 m5 s10 l5">
@@ -12,8 +14,8 @@ const NameFilter = props => {
           type="text"
           id="name"
           name="name"
-          value={props.input.name}
-          onChange={props.searchHandler}
+          value={input.name}
+          onChange={searchHandler}
         />
         <label htmlFor="name">Name</label>
       </div>
@@ -23,8 +25,8 @@ const NameFilter = props => {
           className="filled-in"
           id="male"
           name="male"
-          checked={props.input.male}
-          onChange={props.checkboxHandler}
+          checked={input.male}
+          onChange={checkboxHandler}
         />
         <label htmlFor="male">Male</label>
       </div>
@@ -34,8 +36,8 @@ const NameFilter = props => {
           className="filled-in"
           id="female"
           name="female"
-          checked={props.input.female}
-          onChange={props.checkboxHandler}
+          checked={input.female}
+          onChange={checkboxHandler}
         />
         <label htmlFor="female">Female</label>
       </div>

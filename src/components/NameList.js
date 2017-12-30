@@ -5,7 +5,7 @@ import maleIcon from '../assets/male.png';
 import femaleIcon from '../assets/female.png';
 
 /**
- * NameList Component.
+ * Component to list all the names in a virtualized list.
  */
 class NameList extends Component {
   rowRenderer = ({ key, index, style }) => {
@@ -32,9 +32,11 @@ class NameList extends Component {
   };
 
   noRowsRenderer = () => {
+    const { isLoading } = this.props;
+
     return (
       <li className="collection-item center">
-        {this.props.isLoading
+        {isLoading
           ? <div className="loading">
               <i
                 className="fa fa-refresh fa-fw"
@@ -56,11 +58,11 @@ class NameList extends Component {
   };
 
   render() {
-    const { names, total } = this.props;
+    const { names, total, isLoading } = this.props;
 
     return (
       <div>
-        {this.props.isLoading
+        {isLoading
           ? ''
           : <p className="small grey-text text-darken-1 right-align">
               Showing {names.length} of {total} names
