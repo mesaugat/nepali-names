@@ -1,6 +1,22 @@
 {
-  "main.css": "static/css/main.bb509433.css",
-  "main.css.map": "static/css/main.bb509433.css.map",
-  "main.js": "static/js/main.f2faa703.js",
-  "main.js.map": "static/js/main.f2faa703.js.map"
+  "files": {
+    "main.css": "/nepali-names/static/css/main.0f4df2b3.chunk.css",
+    "main.js": "/nepali-names/static/js/main.03164e8e.chunk.js",
+    "main.js.map": "/nepali-names/static/js/main.03164e8e.chunk.js.map",
+    "runtime-main.js": "/nepali-names/static/js/runtime-main.8b03ee04.js",
+    "runtime-main.js.map": "/nepali-names/static/js/runtime-main.8b03ee04.js.map",
+    "static/js/2.64482644.chunk.js": "/nepali-names/static/js/2.64482644.chunk.js",
+    "static/js/2.64482644.chunk.js.map": "/nepali-names/static/js/2.64482644.chunk.js.map",
+    "index.html": "/nepali-names/index.html",
+    "precache-manifest.e540ddc420bd4a059ccff8a669d02818.js": "/nepali-names/precache-manifest.e540ddc420bd4a059ccff8a669d02818.js",
+    "service-worker.js": "/nepali-names/service-worker.js",
+    "static/css/main.0f4df2b3.chunk.css.map": "/nepali-names/static/css/main.0f4df2b3.chunk.css.map",
+    "static/js/2.64482644.chunk.js.LICENSE": "/nepali-names/static/js/2.64482644.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b03ee04.js",
+    "static/js/2.64482644.chunk.js",
+    "static/css/main.0f4df2b3.chunk.css",
+    "static/js/main.03164e8e.chunk.js"
+  ]
 }
