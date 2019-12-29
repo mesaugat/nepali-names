@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Header Component.
  */
-const Header = () =>
+const Header = () => (
   <nav>
     <div className="nav-wrapper teal darken-3">
       <div className="container">
@@ -24,6 +24,7 @@ const Header = () =>
         </a>
       </div>
     </div>
-  </nav>;
+  </nav>
+);
 
 export default Header;
